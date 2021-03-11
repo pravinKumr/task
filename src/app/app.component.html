@@ -1,0 +1,760 @@
+<!-- Header -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="text-decoration-none" href="#">Book Ticket</a>
+    </div>
+  </nav>
+</header>
+<!-- Header end -->
+
+<!-- Ticket form -->
+<div id="addUser" class="container mt-5">
+  <div *ngIf="userForm == 1">
+    <div class="nextStep d-flex align-items-center mb-5">
+      <div class="active">
+        <svg id="Layer_5" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512"
+          xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="m41 51h2v8h-2z" />
+            <path d="m45 51h2v8h-2z" />
+            <path
+              d="m55 35.99v-20.99h-2v-10.181l-2 .333v-2.152h-2v2.486l-2 .333v-4.819h-2v5.153l-2 .333v-3.486h-2v3.819l-2 .333v7.848h-2v10h-8v-14h-4v-6h-2v-4h-10v4h-2v6h-4v18.685c-2.072.989-3.581 2.962-3.92 5.315h-2.08v28h62v-28.153zm-14-27.143 10-1.667v7.82h-10zm-2 8.153h14v19.276l-6 .857v5.201l-3-4-3 4v-17.334h-2zm0 12h-14v-2h14zm0 20h10v12h-10zm1-2 4-5.333 4 5.333zm-25-44h6v2h-6zm-2 4h10v4h-10zm-4 6h18v12h-4v4.685c-.911-.434-1.926-.685-3-.685h-10c-.34 0-.672.033-1 .08zm1 18h10c2.414 0 4.434 1.721 4.899 4h-19.798c.465-2.279 2.485-4 4.899-4zm17 6v2h-24v-2zm-4 18h-4v-4h4zm-6 0h-4v-4h4zm0 2v4h-4v-4zm2 0h4v4h-4zm4-8h-4v-4h4zm-6 0h-4v-4h4zm-6 0h-4v-4h4zm-4 2h4v4h-4zm0 6h4v4h-4zm18 4v-18h-20v18h-2v-20h24v20zm1.92-26c-.216-1.502-.906-2.853-1.92-3.889v-.111h14v14l-2 2.667v13.333h-8v-26zm34.08 26h-10v-13.333l-2-2.667v-6.133l12-1.714z" />
+            <path d="m31 33h2v2h-2z" />
+            <path d="m31 57h2v2h-2z" />
+            <path d="m31 37h2v2h-2z" />
+            <path d="m31 53h2v2h-2z" />
+            <path d="m31 45h2v2h-2z" />
+            <path d="m31 41h2v2h-2z" />
+            <path d="m31 49h2v2h-2z" />
+            <path d="m35 41h2v2h-2z" />
+            <path d="m35 37h2v2h-2z" />
+            <path d="m35 33h2v2h-2z" />
+            <path d="m57 57h2v2h-2z" />
+            <path d="m57 49h2v2h-2z" />
+            <path d="m57 53h2v2h-2z" />
+            <path d="m57 45h2v2h-2z" />
+            <path d="m57 41h2v2h-2z" />
+            <path d="m53 53h2v2h-2z" />
+            <path d="m53 41h2v2h-2z" />
+            <path d="m53 49h2v2h-2z" />
+            <path d="m53 57h2v2h-2z" />
+            <path d="m53 45h2v2h-2z" />
+            <path d="m23 15h2v2h-2z" />
+            <path d="m19 15h2v2h-2z" />
+            <path d="m11 15h2v2h-2z" />
+            <path d="m15 15h2v2h-2z" />
+            <path d="m15 19h2v2h-2z" />
+            <path d="m23 19h2v2h-2z" />
+            <path d="m11 19h2v2h-2z" />
+            <path d="m19 19h2v2h-2z" />
+            <path d="m11 23h2v2h-2z" />
+            <path d="m15 23h2v2h-2z" />
+            <path d="m19 23h2v2h-2z" />
+            <path d="m49 19h2v2h-2z" />
+            <path d="m45 19h2v2h-2z" />
+            <path d="m41 19h2v2h-2z" />
+            <path d="m49 23h2v2h-2z" />
+            <path d="m41 23h2v2h-2z" />
+            <path d="m45 23h2v2h-2z" />
+            <path d="m45 35h2v2h-2z" />
+            <path d="m45 31h2v2h-2z" />
+            <path d="m45 27h2v2h-2z" />
+            <path d="m49 31h2v2h-2z" />
+            <path d="m49 27h2v2h-2z" />
+          </g>
+        </svg>
+      </div>
+      <hr>
+      <div>
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M367.57,256.909c-9.839-4.677-19.878-8.706-30.093-12.081C370.56,219.996,392,180.455,392,136C392,61.01,330.991,0,256,0
+			c-74.991,0-136,61.01-136,136c0,44.504,21.488,84.084,54.633,108.911c-30.368,9.998-58.863,25.555-83.803,46.069
+			c-45.732,37.617-77.529,90.086-89.532,147.743c-3.762,18.066,0.745,36.622,12.363,50.908C25.222,503.847,42.365,512,60.693,512
+			H307c11.046,0,20-8.954,20-20c0-11.046-8.954-20-20-20H60.693c-8.538,0-13.689-4.766-15.999-7.606
+			c-3.989-4.905-5.533-11.29-4.236-17.519c20.755-99.695,108.691-172.521,210.24-174.977c1.759,0.068,3.526,0.102,5.302,0.102
+			c1.793,0,3.578-0.035,5.354-0.104c31.12,0.73,61.05,7.832,89.044,21.14c9.977,4.74,21.907,0.499,26.649-9.478
+			C381.789,273.582,377.547,261.651,367.57,256.909z M260.878,231.877c-1.623-0.029-3.249-0.044-4.878-0.044
+			c-1.614,0-3.228,0.016-4.84,0.046C200.465,229.35,160,187.312,160,136c0-52.935,43.065-96,96-96s96,43.065,96,96
+			C352,187.299,311.555,229.329,260.878,231.877z" />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M492,397h-55v-55c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v55h-55c-11.046,0-20,8.954-20,20
+			c0,11.046,8.954,20,20,20h55v55c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20v-55h55c11.046,0,20-8.954,20-20
+			C512,405.954,503.046,397,492,397z" />
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+
+      </div>
+      <hr>
+      <div>
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 480.48 480.48" style="enable-background:new 0 0 480.48 480.48;"
+          xml:space="preserve">
+          <g>
+            <g>
+              <g>
+                <path d="M477.128,172.606l-53.68-139.568C413.276,6.654,383.641-6.488,357.257,3.684c-0.383,0.148-0.765,0.3-1.145,0.457
+				l-268.256,111.2c-25.543,10.478-38.097,39.391-28.312,65.208l7.376,19.688H50c-27.601,0.031-49.969,22.399-50,50v180
+				c0.031,27.601,22.399,49.969,50,50h340c27.601-0.031,49.969-22.399,50-50v-180c-0.016-2.714-0.257-5.422-0.72-8.096l9.288-3.76
+				C474.339,227.818,487.005,198.648,477.128,172.606z M50,216.238h340c17.956,0.051,32.768,14.074,33.8,32H16.2
+				C17.232,230.311,32.044,216.288,50,216.238z M130.408,168.046l53.472-26.744l10.992,27.496L141.4,195.534L130.408,168.046z
+				 M424,430.238c-0.022,18.769-15.231,33.978-34,34H50c-18.769-0.022-33.978-15.231-34-34v-102h408V430.238z M424,312.238H16v-48
+				h408V312.238z M442.568,223.598l-8.36,3.384c-8.635-16.424-25.652-26.718-44.208-26.744H167.776l40.84-20.424
+				c3.724-1.859,5.401-6.263,3.856-10.128l-16.968-42.4c-1.641-4.102-6.296-6.098-10.398-4.458c-0.207,0.083-0.41,0.174-0.609,0.274
+				l-67.832,33.936c-3.721,1.862-5.394,6.265-3.848,10.128l13.232,33.072H84l-9.472-25.264c-6.715-17.738,1.91-37.598,19.456-44.8
+				l268.248-111.2c17.933-7.436,38.499,1.073,45.936,19.006c0.116,0.279,0.228,0.56,0.336,0.842l53.68,139.568
+				C468.975,196.285,460.276,216.333,442.568,223.598z" />
+                <path d="M287.775,441.742c14.908,8.661,33.317,8.661,48.225,0c22.922,13.317,52.3,5.53,65.617-17.392s5.53-52.3-17.392-65.617
+				c-7.357-4.274-15.717-6.516-24.225-6.496c-8.434,0.004-16.716,2.245-24,6.496c-22.922-13.317-52.3-5.531-65.617,17.391
+				C257.066,399.047,264.853,428.424,287.775,441.742z M349.376,370.19c3.403-1.254,6.997-1.914,10.624-1.952
+				c17.673,0,32,14.327,32,32c0,17.673-14.327,32-32,32c-3.627-0.038-7.221-0.698-10.624-1.952
+				C363.54,412.757,363.54,387.718,349.376,370.19z M336,379.294c10.667,11.926,10.667,29.962,0,41.888
+				C325.333,409.256,325.333,391.219,336,379.294z M312,368.238c3.627,0.037,7.221,0.698,10.624,1.952
+				c-14.164,17.528-14.164,42.568,0,60.096c-3.403,1.254-6.997,1.914-10.624,1.952c-17.673,0-32-14.327-32-32
+				C280,382.564,294.327,368.238,312,368.238z" />
+
+                <rect x="370.883" y="113.937" transform="matrix(-0.4062 -0.9138 0.9138 -0.4062 390.4948 565.1589)"
+                  width="16" height="83.52" />
+
+                <rect x="284.256" y="122.262" transform="matrix(0.908 -0.4191 0.4191 0.908 -22.8353 156.5479)"
+                  width="121.408" height="15.992" />
+              </g>
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+
+      </div>
+    </div>
+    <form [formGroup]="addFromToForm">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 form-group">
+          <label for="fromCity">From</label>
+          <select class="form-control" id="fromCity" formControlName="fromCity" name="fromCity" [(ngModel)]="fromCity"
+            (change)="selectFromCity($event.target.value)">
+            <option value="" disabled>City</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+          </select>
+          <div class="error-msg" *ngIf="addFromToSubmitted && addFromToFormvalidateControl.fromCity.errors">
+            <span *ngIf="addFromToFormvalidateControl.fromCity.errors.required">Please select From city.</span>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 form-group">
+          <label for="toCity">To</label>
+          <select class="form-control" id="toCity" formControlName="toCity" name="toCity" [(ngModel)]="toCity"
+            (change)="selectToCity($event.target.value)">
+            <option value="" disabled>City</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+          </select>
+          <div class="error-msg" *ngIf="addFromToSubmitted && addFromToFormvalidateControl.toCity.errors">
+            <span *ngIf="addFromToFormvalidateControl.toCity.errors.required">Please select To city.</span>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 form-group">
+          <label for="date">Date</label>
+          <div class="calendar position-relative">
+            <input type="text" class="form-control" readonly id="date" formControlName="date" placeholder="Date"
+              bsDatepicker #date="bsDatepicker"
+              [bsConfig]="{ dateInputFormat: 'DD MMM YYYY', containerClass: 'theme-blue' }" [minDate]="minDate" />
+            <img src="assets/images/calendar.svg" class="cursor-pointer" (click)="date.toggle()"
+              [attr.aria-expanded]="date.isOpen">
+          </div>
+          <div class="error-msg" *ngIf="addFromToSubmitted && addFromToFormvalidateControl.date.errors">
+            <span *ngIf="addFromToFormvalidateControl.date.errors.required">Please enter date.</span>
+          </div>
+        </div>
+      </div>
+      <div class="error-msg" *ngIf="addFromToSubmitted && sameCityError == 1">From and To city cannot be same.
+      </div>
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-user-add" (click)="addFromTo(addFromToForm.value)">Next</button>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="userForm == 2">
+    <div class="nextStep d-flex align-items-center mb-5">
+      <div (click)="userForm = 1" class="cursor-pointer">
+        <svg id="Layer_5" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512"
+          xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="m41 51h2v8h-2z" />
+            <path d="m45 51h2v8h-2z" />
+            <path
+              d="m55 35.99v-20.99h-2v-10.181l-2 .333v-2.152h-2v2.486l-2 .333v-4.819h-2v5.153l-2 .333v-3.486h-2v3.819l-2 .333v7.848h-2v10h-8v-14h-4v-6h-2v-4h-10v4h-2v6h-4v18.685c-2.072.989-3.581 2.962-3.92 5.315h-2.08v28h62v-28.153zm-14-27.143 10-1.667v7.82h-10zm-2 8.153h14v19.276l-6 .857v5.201l-3-4-3 4v-17.334h-2zm0 12h-14v-2h14zm0 20h10v12h-10zm1-2 4-5.333 4 5.333zm-25-44h6v2h-6zm-2 4h10v4h-10zm-4 6h18v12h-4v4.685c-.911-.434-1.926-.685-3-.685h-10c-.34 0-.672.033-1 .08zm1 18h10c2.414 0 4.434 1.721 4.899 4h-19.798c.465-2.279 2.485-4 4.899-4zm17 6v2h-24v-2zm-4 18h-4v-4h4zm-6 0h-4v-4h4zm0 2v4h-4v-4zm2 0h4v4h-4zm4-8h-4v-4h4zm-6 0h-4v-4h4zm-6 0h-4v-4h4zm-4 2h4v4h-4zm0 6h4v4h-4zm18 4v-18h-20v18h-2v-20h24v20zm1.92-26c-.216-1.502-.906-2.853-1.92-3.889v-.111h14v14l-2 2.667v13.333h-8v-26zm34.08 26h-10v-13.333l-2-2.667v-6.133l12-1.714z" />
+            <path d="m31 33h2v2h-2z" />
+            <path d="m31 57h2v2h-2z" />
+            <path d="m31 37h2v2h-2z" />
+            <path d="m31 53h2v2h-2z" />
+            <path d="m31 45h2v2h-2z" />
+            <path d="m31 41h2v2h-2z" />
+            <path d="m31 49h2v2h-2z" />
+            <path d="m35 41h2v2h-2z" />
+            <path d="m35 37h2v2h-2z" />
+            <path d="m35 33h2v2h-2z" />
+            <path d="m57 57h2v2h-2z" />
+            <path d="m57 49h2v2h-2z" />
+            <path d="m57 53h2v2h-2z" />
+            <path d="m57 45h2v2h-2z" />
+            <path d="m57 41h2v2h-2z" />
+            <path d="m53 53h2v2h-2z" />
+            <path d="m53 41h2v2h-2z" />
+            <path d="m53 49h2v2h-2z" />
+            <path d="m53 57h2v2h-2z" />
+            <path d="m53 45h2v2h-2z" />
+            <path d="m23 15h2v2h-2z" />
+            <path d="m19 15h2v2h-2z" />
+            <path d="m11 15h2v2h-2z" />
+            <path d="m15 15h2v2h-2z" />
+            <path d="m15 19h2v2h-2z" />
+            <path d="m23 19h2v2h-2z" />
+            <path d="m11 19h2v2h-2z" />
+            <path d="m19 19h2v2h-2z" />
+            <path d="m11 23h2v2h-2z" />
+            <path d="m15 23h2v2h-2z" />
+            <path d="m19 23h2v2h-2z" />
+            <path d="m49 19h2v2h-2z" />
+            <path d="m45 19h2v2h-2z" />
+            <path d="m41 19h2v2h-2z" />
+            <path d="m49 23h2v2h-2z" />
+            <path d="m41 23h2v2h-2z" />
+            <path d="m45 23h2v2h-2z" />
+            <path d="m45 35h2v2h-2z" />
+            <path d="m45 31h2v2h-2z" />
+            <path d="m45 27h2v2h-2z" />
+            <path d="m49 31h2v2h-2z" />
+            <path d="m49 27h2v2h-2z" />
+          </g>
+        </svg>
+      </div>
+      <hr>
+      <div class="active">
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M367.57,256.909c-9.839-4.677-19.878-8.706-30.093-12.081C370.56,219.996,392,180.455,392,136C392,61.01,330.991,0,256,0
+			c-74.991,0-136,61.01-136,136c0,44.504,21.488,84.084,54.633,108.911c-30.368,9.998-58.863,25.555-83.803,46.069
+			c-45.732,37.617-77.529,90.086-89.532,147.743c-3.762,18.066,0.745,36.622,12.363,50.908C25.222,503.847,42.365,512,60.693,512
+			H307c11.046,0,20-8.954,20-20c0-11.046-8.954-20-20-20H60.693c-8.538,0-13.689-4.766-15.999-7.606
+			c-3.989-4.905-5.533-11.29-4.236-17.519c20.755-99.695,108.691-172.521,210.24-174.977c1.759,0.068,3.526,0.102,5.302,0.102
+			c1.793,0,3.578-0.035,5.354-0.104c31.12,0.73,61.05,7.832,89.044,21.14c9.977,4.74,21.907,0.499,26.649-9.478
+			C381.789,273.582,377.547,261.651,367.57,256.909z M260.878,231.877c-1.623-0.029-3.249-0.044-4.878-0.044
+			c-1.614,0-3.228,0.016-4.84,0.046C200.465,229.35,160,187.312,160,136c0-52.935,43.065-96,96-96s96,43.065,96,96
+			C352,187.299,311.555,229.329,260.878,231.877z" />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M492,397h-55v-55c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v55h-55c-11.046,0-20,8.954-20,20
+			c0,11.046,8.954,20,20,20h55v55c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20v-55h55c11.046,0,20-8.954,20-20
+			C512,405.954,503.046,397,492,397z" />
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+
+      </div>
+      <hr>
+      <div>
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 480.48 480.48" style="enable-background:new 0 0 480.48 480.48;"
+          xml:space="preserve">
+          <g>
+            <g>
+              <g>
+                <path d="M477.128,172.606l-53.68-139.568C413.276,6.654,383.641-6.488,357.257,3.684c-0.383,0.148-0.765,0.3-1.145,0.457
+				l-268.256,111.2c-25.543,10.478-38.097,39.391-28.312,65.208l7.376,19.688H50c-27.601,0.031-49.969,22.399-50,50v180
+				c0.031,27.601,22.399,49.969,50,50h340c27.601-0.031,49.969-22.399,50-50v-180c-0.016-2.714-0.257-5.422-0.72-8.096l9.288-3.76
+				C474.339,227.818,487.005,198.648,477.128,172.606z M50,216.238h340c17.956,0.051,32.768,14.074,33.8,32H16.2
+				C17.232,230.311,32.044,216.288,50,216.238z M130.408,168.046l53.472-26.744l10.992,27.496L141.4,195.534L130.408,168.046z
+				 M424,430.238c-0.022,18.769-15.231,33.978-34,34H50c-18.769-0.022-33.978-15.231-34-34v-102h408V430.238z M424,312.238H16v-48
+				h408V312.238z M442.568,223.598l-8.36,3.384c-8.635-16.424-25.652-26.718-44.208-26.744H167.776l40.84-20.424
+				c3.724-1.859,5.401-6.263,3.856-10.128l-16.968-42.4c-1.641-4.102-6.296-6.098-10.398-4.458c-0.207,0.083-0.41,0.174-0.609,0.274
+				l-67.832,33.936c-3.721,1.862-5.394,6.265-3.848,10.128l13.232,33.072H84l-9.472-25.264c-6.715-17.738,1.91-37.598,19.456-44.8
+				l268.248-111.2c17.933-7.436,38.499,1.073,45.936,19.006c0.116,0.279,0.228,0.56,0.336,0.842l53.68,139.568
+				C468.975,196.285,460.276,216.333,442.568,223.598z" />
+                <path d="M287.775,441.742c14.908,8.661,33.317,8.661,48.225,0c22.922,13.317,52.3,5.53,65.617-17.392s5.53-52.3-17.392-65.617
+				c-7.357-4.274-15.717-6.516-24.225-6.496c-8.434,0.004-16.716,2.245-24,6.496c-22.922-13.317-52.3-5.531-65.617,17.391
+				C257.066,399.047,264.853,428.424,287.775,441.742z M349.376,370.19c3.403-1.254,6.997-1.914,10.624-1.952
+				c17.673,0,32,14.327,32,32c0,17.673-14.327,32-32,32c-3.627-0.038-7.221-0.698-10.624-1.952
+				C363.54,412.757,363.54,387.718,349.376,370.19z M336,379.294c10.667,11.926,10.667,29.962,0,41.888
+				C325.333,409.256,325.333,391.219,336,379.294z M312,368.238c3.627,0.037,7.221,0.698,10.624,1.952
+				c-14.164,17.528-14.164,42.568,0,60.096c-3.403,1.254-6.997,1.914-10.624,1.952c-17.673,0-32-14.327-32-32
+				C280,382.564,294.327,368.238,312,368.238z" />
+
+                <rect x="370.883" y="113.937" transform="matrix(-0.4062 -0.9138 0.9138 -0.4062 390.4948 565.1589)"
+                  width="16" height="83.52" />
+
+                <rect x="284.256" y="122.262" transform="matrix(0.908 -0.4191 0.4191 0.908 -22.8353 156.5479)"
+                  width="121.408" height="15.992" />
+              </g>
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+
+      </div>
+    </div>
+    <form [formGroup]="addUserForm">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" formControlName="name" placeholder="Name" />
+          <div class="error-msg" *ngIf="addUserFormSubmitted && addUserFormvalidateControl.name.errors">
+            <span *ngIf="addUserFormvalidateControl.name.errors.required">Please enter name.</span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 form-group">
+          <label for="mobile">Mobile</label>
+          <input type="text" class="form-control" minlength="10" maxlength="10" (keypress)="validateNumber($event)"
+            id="mobile" formControlName="mobile" placeholder="Mobile" />
+          <div class="error-msg" *ngIf="addUserFormSubmitted && addUserFormvalidateControl.mobile.errors">
+            <span *ngIf="addUserFormvalidateControl.mobile.errors.required">Please enter mobile number.</span>
+            <span
+              *ngIf="addUserFormvalidateControl.mobile.errors.minlength || addUserFormvalidateControl.mobile.errors.maxlength">Mobile
+              number should contain 10 digits.</span>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 form-group">
+          <label for="dob">DOB</label>
+          <div class="calendar position-relative">
+            <input type="text" class="form-control" readonly id="dob" formControlName="dob" placeholder="DOB"
+              bsDatepicker #dob="bsDatepicker"
+              [bsConfig]="{ dateInputFormat: 'DD MMM YYYY', containerClass: 'theme-blue' }"  [maxDate]="maxDate"/>
+            <img src="assets/images/calendar.svg" class="cursor-pointer" (click)="dob.toggle()"
+              [attr.aria-expanded]="dob.isOpen">
+          </div>
+          <div class="error-msg" *ngIf="addUserFormSubmitted && addUserFormvalidateControl.dob.errors">
+            <span *ngIf="addUserFormvalidateControl.dob.errors.required">Please enter DOB.</span>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 justify-content-center d-flex align-items-center">
+          <button type="button" class="btn btn-add" (click)="addUserData(addUserForm.value)"><img
+              src="assets/images/plus-icon.svg"></button>
+        </div>
+      </div>
+      <div *ngIf="userData.length > 0">
+        <div class="row" *ngFor="let user of userData;let i = index">
+          <div class="col-xl-4 col-lg-4 form-group">
+            <input type="text" disabled class="form-control" placeholder="{{user.name}}" />
+          </div>
+          <div class="col-xl-3 col-lg-3 form-group">
+            <input type="text" disabled class="form-control" placeholder="{{user.mobile}}" />
+          </div>
+          <div class="col-xl-3 col-lg-3 form-group">
+            <input type="text" disabled class="form-control" placeholder="{{user.dob}}" />
+          </div>
+          <div class="col-xl-2 col-lg-2 justify-content-center d-flex align-items-center">
+            <!-- <img src="assets/images/edit.svg" class="cursor-pointer mr-3" (click)="editData(i, user)"> -->
+            <img src="assets/images/delete.svg" class="cursor-pointer" (click)="deleteUserData(i)">
+          </div>
+        </div>
+      </div>
+      <div class="error-msg" *ngIf="errorUserData == 1">Please enter user data.</div>
+      <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-user-add" (click)="userForm = 1">Back</button>
+        <button type="button" class="btn btn-user-add" (click)="nextPaymentMethod()">Next</button>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="userForm == 3">
+    <div class="nextStep d-flex align-items-center mb-5">
+      <div (click)="userForm = 1" class="cursor-pointer">
+        <svg id="Layer_5" enable-background="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512"
+          xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="m41 51h2v8h-2z" />
+            <path d="m45 51h2v8h-2z" />
+            <path
+              d="m55 35.99v-20.99h-2v-10.181l-2 .333v-2.152h-2v2.486l-2 .333v-4.819h-2v5.153l-2 .333v-3.486h-2v3.819l-2 .333v7.848h-2v10h-8v-14h-4v-6h-2v-4h-10v4h-2v6h-4v18.685c-2.072.989-3.581 2.962-3.92 5.315h-2.08v28h62v-28.153zm-14-27.143 10-1.667v7.82h-10zm-2 8.153h14v19.276l-6 .857v5.201l-3-4-3 4v-17.334h-2zm0 12h-14v-2h14zm0 20h10v12h-10zm1-2 4-5.333 4 5.333zm-25-44h6v2h-6zm-2 4h10v4h-10zm-4 6h18v12h-4v4.685c-.911-.434-1.926-.685-3-.685h-10c-.34 0-.672.033-1 .08zm1 18h10c2.414 0 4.434 1.721 4.899 4h-19.798c.465-2.279 2.485-4 4.899-4zm17 6v2h-24v-2zm-4 18h-4v-4h4zm-6 0h-4v-4h4zm0 2v4h-4v-4zm2 0h4v4h-4zm4-8h-4v-4h4zm-6 0h-4v-4h4zm-6 0h-4v-4h4zm-4 2h4v4h-4zm0 6h4v4h-4zm18 4v-18h-20v18h-2v-20h24v20zm1.92-26c-.216-1.502-.906-2.853-1.92-3.889v-.111h14v14l-2 2.667v13.333h-8v-26zm34.08 26h-10v-13.333l-2-2.667v-6.133l12-1.714z" />
+            <path d="m31 33h2v2h-2z" />
+            <path d="m31 57h2v2h-2z" />
+            <path d="m31 37h2v2h-2z" />
+            <path d="m31 53h2v2h-2z" />
+            <path d="m31 45h2v2h-2z" />
+            <path d="m31 41h2v2h-2z" />
+            <path d="m31 49h2v2h-2z" />
+            <path d="m35 41h2v2h-2z" />
+            <path d="m35 37h2v2h-2z" />
+            <path d="m35 33h2v2h-2z" />
+            <path d="m57 57h2v2h-2z" />
+            <path d="m57 49h2v2h-2z" />
+            <path d="m57 53h2v2h-2z" />
+            <path d="m57 45h2v2h-2z" />
+            <path d="m57 41h2v2h-2z" />
+            <path d="m53 53h2v2h-2z" />
+            <path d="m53 41h2v2h-2z" />
+            <path d="m53 49h2v2h-2z" />
+            <path d="m53 57h2v2h-2z" />
+            <path d="m53 45h2v2h-2z" />
+            <path d="m23 15h2v2h-2z" />
+            <path d="m19 15h2v2h-2z" />
+            <path d="m11 15h2v2h-2z" />
+            <path d="m15 15h2v2h-2z" />
+            <path d="m15 19h2v2h-2z" />
+            <path d="m23 19h2v2h-2z" />
+            <path d="m11 19h2v2h-2z" />
+            <path d="m19 19h2v2h-2z" />
+            <path d="m11 23h2v2h-2z" />
+            <path d="m15 23h2v2h-2z" />
+            <path d="m19 23h2v2h-2z" />
+            <path d="m49 19h2v2h-2z" />
+            <path d="m45 19h2v2h-2z" />
+            <path d="m41 19h2v2h-2z" />
+            <path d="m49 23h2v2h-2z" />
+            <path d="m41 23h2v2h-2z" />
+            <path d="m45 23h2v2h-2z" />
+            <path d="m45 35h2v2h-2z" />
+            <path d="m45 31h2v2h-2z" />
+            <path d="m45 27h2v2h-2z" />
+            <path d="m49 31h2v2h-2z" />
+            <path d="m49 27h2v2h-2z" />
+          </g>
+        </svg>
+      </div>
+      <hr>
+      <div (click)="userForm = 2" class="cursor-pointer">
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M367.57,256.909c-9.839-4.677-19.878-8.706-30.093-12.081C370.56,219.996,392,180.455,392,136C392,61.01,330.991,0,256,0
+			c-74.991,0-136,61.01-136,136c0,44.504,21.488,84.084,54.633,108.911c-30.368,9.998-58.863,25.555-83.803,46.069
+			c-45.732,37.617-77.529,90.086-89.532,147.743c-3.762,18.066,0.745,36.622,12.363,50.908C25.222,503.847,42.365,512,60.693,512
+			H307c11.046,0,20-8.954,20-20c0-11.046-8.954-20-20-20H60.693c-8.538,0-13.689-4.766-15.999-7.606
+			c-3.989-4.905-5.533-11.29-4.236-17.519c20.755-99.695,108.691-172.521,210.24-174.977c1.759,0.068,3.526,0.102,5.302,0.102
+			c1.793,0,3.578-0.035,5.354-0.104c31.12,0.73,61.05,7.832,89.044,21.14c9.977,4.74,21.907,0.499,26.649-9.478
+			C381.789,273.582,377.547,261.651,367.57,256.909z M260.878,231.877c-1.623-0.029-3.249-0.044-4.878-0.044
+			c-1.614,0-3.228,0.016-4.84,0.046C200.465,229.35,160,187.312,160,136c0-52.935,43.065-96,96-96s96,43.065,96,96
+			C352,187.299,311.555,229.329,260.878,231.877z" />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M492,397h-55v-55c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v55h-55c-11.046,0-20,8.954-20,20
+			c0,11.046,8.954,20,20,20h55v55c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20v-55h55c11.046,0,20-8.954,20-20
+			C512,405.954,503.046,397,492,397z" />
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+
+      </div>
+      <hr>
+      <div class="active">
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 480.48 480.48" style="enable-background:new 0 0 480.48 480.48;"
+          xml:space="preserve">
+          <g>
+            <g>
+              <g>
+                <path d="M477.128,172.606l-53.68-139.568C413.276,6.654,383.641-6.488,357.257,3.684c-0.383,0.148-0.765,0.3-1.145,0.457
+				l-268.256,111.2c-25.543,10.478-38.097,39.391-28.312,65.208l7.376,19.688H50c-27.601,0.031-49.969,22.399-50,50v180
+				c0.031,27.601,22.399,49.969,50,50h340c27.601-0.031,49.969-22.399,50-50v-180c-0.016-2.714-0.257-5.422-0.72-8.096l9.288-3.76
+				C474.339,227.818,487.005,198.648,477.128,172.606z M50,216.238h340c17.956,0.051,32.768,14.074,33.8,32H16.2
+				C17.232,230.311,32.044,216.288,50,216.238z M130.408,168.046l53.472-26.744l10.992,27.496L141.4,195.534L130.408,168.046z
+				 M424,430.238c-0.022,18.769-15.231,33.978-34,34H50c-18.769-0.022-33.978-15.231-34-34v-102h408V430.238z M424,312.238H16v-48
+				h408V312.238z M442.568,223.598l-8.36,3.384c-8.635-16.424-25.652-26.718-44.208-26.744H167.776l40.84-20.424
+				c3.724-1.859,5.401-6.263,3.856-10.128l-16.968-42.4c-1.641-4.102-6.296-6.098-10.398-4.458c-0.207,0.083-0.41,0.174-0.609,0.274
+				l-67.832,33.936c-3.721,1.862-5.394,6.265-3.848,10.128l13.232,33.072H84l-9.472-25.264c-6.715-17.738,1.91-37.598,19.456-44.8
+				l268.248-111.2c17.933-7.436,38.499,1.073,45.936,19.006c0.116,0.279,0.228,0.56,0.336,0.842l53.68,139.568
+				C468.975,196.285,460.276,216.333,442.568,223.598z" />
+                <path d="M287.775,441.742c14.908,8.661,33.317,8.661,48.225,0c22.922,13.317,52.3,5.53,65.617-17.392s5.53-52.3-17.392-65.617
+				c-7.357-4.274-15.717-6.516-24.225-6.496c-8.434,0.004-16.716,2.245-24,6.496c-22.922-13.317-52.3-5.531-65.617,17.391
+				C257.066,399.047,264.853,428.424,287.775,441.742z M349.376,370.19c3.403-1.254,6.997-1.914,10.624-1.952
+				c17.673,0,32,14.327,32,32c0,17.673-14.327,32-32,32c-3.627-0.038-7.221-0.698-10.624-1.952
+				C363.54,412.757,363.54,387.718,349.376,370.19z M336,379.294c10.667,11.926,10.667,29.962,0,41.888
+				C325.333,409.256,325.333,391.219,336,379.294z M312,368.238c3.627,0.037,7.221,0.698,10.624,1.952
+				c-14.164,17.528-14.164,42.568,0,60.096c-3.403,1.254-6.997,1.914-10.624,1.952c-17.673,0-32-14.327-32-32
+				C280,382.564,294.327,368.238,312,368.238z" />
+
+                <rect x="370.883" y="113.937" transform="matrix(-0.4062 -0.9138 0.9138 -0.4062 390.4948 565.1589)"
+                  width="16" height="83.52" />
+
+                <rect x="284.256" y="122.262" transform="matrix(0.908 -0.4191 0.4191 0.908 -22.8353 156.5479)"
+                  width="121.408" height="15.992" />
+              </g>
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+
+      </div>
+    </div>
+    <form [formGroup]="paymentMethodForm">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 form-group">
+          <label for="paymentType">Payment Type</label>
+          <select class="form-control" id="paymentType" formControlName="paymentType" name="paymentType"
+            [(ngModel)]="paymentType" (change)="selectMethod($event.target.value)">
+            <option value="" disabled>Payment Type</option>
+            <option value="Debit">Debit</option>
+            <option value="Credit">Credit</option>
+          </select>
+          <div class="error-msg"
+            *ngIf="paymentMethodSubmitted && addPaymentMethodFormvalidateControl.paymentType.errors">
+            <span *ngIf="addPaymentMethodFormvalidateControl.paymentType.errors.required">Please select payment
+              type.</span>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 form-group" *ngIf="paymentType != ''">
+          <label for="cardNo"><span *ngIf="paymentType == 'Debit'">Debit</span><span
+              *ngIf="paymentType == 'Credit'">Credit</span> No.</label>
+          <input type="text" class="form-control" minlength="12" maxlength="12" (keypress)="validateNumber($event)"
+            id="cardNo" formControlName="cardNo" placeholder="Card No." />
+          <div class="error-msg" *ngIf="paymentMethodSubmitted && addPaymentMethodFormvalidateControl.cardNo.errors">
+            <span *ngIf="addPaymentMethodFormvalidateControl.cardNo.errors.required">Please enter card
+              number.</span>
+            <span
+              *ngIf="addPaymentMethodFormvalidateControl.cardNo.errors.minlength || addPaymentMethodFormvalidateControl.cardNo.errors.maxlength">Card
+              number should contain 12 digits.</span>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 form-group" *ngIf="paymentType != ''">
+          <label for="pin">Pin</label>
+          <input type="text" class="form-control" minlength="3" maxlength="3" (keypress)="validateNumber($event)"
+            id="pin" formControlName="pin" placeholder="Pin" />
+          <div class="error-msg" *ngIf="paymentMethodSubmitted && addPaymentMethodFormvalidateControl.pin.errors">
+            <span *ngIf="addPaymentMethodFormvalidateControl.pin.errors.required">Please enter pin number.</span>
+            <span
+              *ngIf="addPaymentMethodFormvalidateControl.pin.errors.minlength || addPaymentMethodFormvalidateControl.pin.errors.maxlength">Pin
+              number should contain 3 digits.</span>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-user-add" (click)="userForm = 2">Back</button>
+        <div>
+          <button class="btn btn-cancel" data-dismiss="modal" type="button" (click)="clearForm()">Cancel</button>
+          <button type="button" class="btn btn-user-add" (click)="bookTicket(paymentMethodForm.value)">Book</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Ticket form end -->
+
+<!-- User table -->
+<!-- <div class="table-responsive-md mt-5 container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">DOB</th>
+        <th scope="col">From</th>
+        <th scope="col">To</th>
+        <th scope="col">Booking Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of finalUserData">
+        <tr *ngFor="let item of data.user;let j = index"><span *ngIf="i > 0">, </span>{{item.name}}</tr>
+        <td>{{data.mobile}}</td>
+        <td>{{data.dob | date : 'dd MMM yyyy'}}</td>
+        <td>{{data.from}}</td>
+        <td>{{data.to}}</td>
+        <td>{{data.date | date : 'dd MMM yyyy'}}</td>
+      </tr>
+      <tr>
+      <tr *ngIf="finalUserData.length == 0">
+        <td colspan="6" class="text-center">No Data</td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+<!-- User table End -->
